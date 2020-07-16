@@ -6,6 +6,7 @@ const passport = require('passport')
 const { mongoURI, cookieKey } = require('./config/keys')
 
 require('./models/User')
+require('./models/Survey')
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 
